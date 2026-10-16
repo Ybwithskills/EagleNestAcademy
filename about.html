@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ──────────────────────────────────────── -->
+  <title>About Us — EagleNest Academy | Our Story, Mission &amp; Team</title>
+  <meta name="description"
+        content="Learn about EagleNest Academy — our 30-year journey shaping Kenyan
+                 leaders, our CBC-aligned mission and values, the leadership team,
+                 teaching staff, and world-class facilities in Nairobi." />
+  <meta name="keywords"
+        content="about EagleNest Academy, Nairobi school history, CBC school mission,
+                 school leadership Kenya, EagleNest principal, school facilities Nairobi" />
+  <link rel="canonical" href="https://www.eaglenestacademy.ac.ke/about.html" />
+
+  <!-- ── Open Graph ───────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="EagleNest Academy" />
+  <meta property="og:url"         content="https://www.eaglenestacademy.ac.ke/about.html" />
+  <meta property="og:title"       content="About EagleNest Academy — Our Story, Mission &amp; Team" />
+  <meta property="og:description" content="Three decades of CBC-aligned excellence in Nairobi. Meet our leadership, explore our facilities, and discover what makes EagleNest different." />
+  <meta property="og:image"       content="Assets/Images/og-about.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="About EagleNest Academy — Our Story, Mission &amp; Team" />
+  <meta name="twitter:description" content="Three decades of CBC-aligned excellence in Nairobi." />
+  <meta name="twitter:image"       content="Assets/Images/og-about.jpg" />
+
+  <!-- ── Favicons ─────────────────────────────────────────── -->
+  <link rel="icon"             href="Assets/Icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="Assets/Icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0F2A43" />
+
+  <!-- ── Google Fonts ─────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Questrial&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ── Tailwind config MUST precede CDN ─────────────────── -->
+  <script src="Assets/js/tailwind-config.js"></script>
+
+  <!-- ── Tailwind CSS CDN ──────────────────────────────────── -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ── Custom stylesheet ─────────────────────────────────── -->
+  <link rel="stylesheet" href="Assets/css/custom.css" />
+
+  <!-- ── Page-level styles ─────────────────────────────────── -->
+  <style>
+    /* ── Page header banner overlay ────────────────────────── */
+    .page-banner-overlay::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(15, 42, 67, 0.82) 0%,
+        rgba(15, 42, 67, 0.55) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* ── Timeline connector line ────────────────────────────── */
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #22C55E, #0EA5E9);
+      transform: translateX(-50%);
+    }
+    @media (max-width: 767px) {
+      .timeline-line { left: 1.25rem; }
+    }
+
+    /* ── Staff card hover ───────────────────────────────────── */
+    .staff-card:hover .staff-overlay { opacity: 1; }
+    .staff-overlay {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    /* ── Facility card image zoom ───────────────────────────── */
+    .facility-card:hover .facility-img {
+      transform: scale(1.06);
+    }
+
+    /* ── Values card accent line ────────────────────────────── */
+    .value-card::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 4px;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+    }
+    .value-card.accent-leaf::before { background: #22C55E; }
+    .value-card.accent-sky::before  { background: #0EA5E9; }
+    .value-card.accent-ink::before  { background: #0F2A43; }
+  </style>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-header"></div>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  1. PAGE HEADER BANNER + BREADCRUMB               ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      class="page-banner-overlay relative min-h-[320px] md:min-h-[380px]
+             flex flex-col justify-end overflow-hidden bg-ink"
+      aria-label="About page header"
+    >
+      <!-- Banner background image -->
+      <img
+        src="Assets/Images/about-banner.jpg"
+        alt="Aerial view of EagleNest Academy campus surrounded by lush greenery in Nairobi"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+        fetchpriority="high"
+      />
+
+      <!-- Decorative blobs -->
+      <div class="absolute top-0 right-0 w-80 h-80 rounded-full
+                  bg-leaf-500/10 blur-3xl pointer-events-none z-10" aria-hidden="true"></div>
+
+      <!-- Content -->
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12 pt-24">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex flex-wrap items-center gap-2 text-sm text-white/60 list-none m-0 p-0">
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            </li>
+            <li aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </li>
+            <li>
+              <span class="text-white font-medium" aria-current="page">About Us</span>
+            </li>
+          </ol>
+        </nav>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white
+                   leading-tight max-w-2xl">
+          About EagleNest Academy
+        </h1>
+        <p class="mt-3 text-sky-100/80 text-base max-w-xl">
+          Three decades of nurturing curiosity, excellence, and character in the heart of Nairobi.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  2. SCHOOL STORY + MILESTONE TIMELINE              ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="our-story"
+      aria-labelledby="story-heading"
+      class="py-20 lg:py-28 bg-white overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Story intro — two-column -->
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
+
+          <!-- Image -->
+          <div class="reveal-left relative">
+            <div class="rounded-4xl overflow-hidden shadow-strong aspect-[4/3]">
+              <img
+                src="Assets/Images/about-story.jpg"
+                alt="[REPLACE: description of founding-era or early campus photo]"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- Year badge -->
+            <div class="absolute -bottom-5 -right-4 lg:-right-8 bg-leaf-500
+                        text-white rounded-3xl px-6 py-5 shadow-strong text-center">
+              <p class="text-4xl font-heading font-bold leading-none">1994</p>
+              <p class="text-xs font-semibold uppercase tracking-widest mt-1 text-leaf-100">Founded</p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div>
+            <p class="reveal text-leaf-500 font-semibold text-sm uppercase tracking-widest mb-3">
+              Our Story
+            </p>
+            <h2 id="story-heading"
+                class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading font-bold
+                       text-ink leading-tight mb-6">
+              From Humble Beginnings<br/>to National Recognition
+            </h2>
+            <div class="space-y-4 text-ink/70 text-base leading-relaxed">
+              <p class="reveal">
+                EagleNest Academy was founded in 1994 by
+                <strong class="text-ink">[REPLACE: Founder Name(s)]</strong>
+                with a single classroom, eight learners, and a bold conviction:
+                that every Kenyan child deserves an education that sees their whole
+                person — intellect, character, creativity, and spirit.
+              </p>
+              <p class="reveal">
+                Over thirty years, that conviction has shaped a thriving community of
+                over 1,450 learners, 92 educators, and thousands of alumni who now
+                lead in business, medicine, public service, and the arts across Kenya
+                and beyond. In 2017 we became one of the first schools in Nairobi
+                County to receive full accreditation under the Competency-Based
+                Curriculum framework.
+              </p>
+              <p class="reveal">
+                Today, EagleNest Academy occupies a
+                <strong class="text-ink">[REPLACE: campus size, e.g. 12-acre]</strong>
+                campus in
+                <strong class="text-ink">[REPLACE: neighbourhood, Nairobi]</strong>,
+                equipped with modern laboratories, a performing arts centre, and
+                digital learning facilities — all in service of the same founding
+                mission: to raise Eagles who soar.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ── Milestone Timeline ──────────────────────────── -->
+        <div class="mt-4">
+          <div class="text-center mb-12">
+            <p class="reveal text-sky-500 font-semibold text-sm uppercase tracking-widest mb-2">
+              Thirty Years in the Making
+            </p>
+            <h3 class="reveal text-2xl sm:text-3xl font-heading font-bold text-ink">
+              Key Milestones
+            </h3>
+          </div>
+
+          <!-- Timeline container -->
+          <div class="relative">
+
+            <!-- Vertical connector -->
+            <div class="timeline-line hidden md:block" aria-hidden="true"></div>
+
+            <ol class="space-y-0 list-none m-0 p-0" role="list" aria-label="School milestones">
+
+              <!-- ── Each milestone: alternates left/right on md+ ── -->
+
+              <!-- 1994 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0 pb-12">
+                <!-- Left content -->
+                <div class="reveal md:pr-12 md:text-right flex flex-col md:items-end gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-leaf-100 text-leaf-700
+                               text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full w-fit">
+                    1994
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">School Founded</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: Founding story in one sentence — e.g. Opened its doors on
+                    Ngong Road with 8 learners in a converted homestead, guided by a
+                    vision of holistic, values-driven education.]
+                  </p>
+                </div>
+                <!-- Centre dot -->
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-5 h-5 rounded-full bg-leaf-500 border-4 border-white
+                            shadow-soft z-10" aria-hidden="true"></div>
+                <!-- Right spacer -->
+                <div class="hidden md:block"></div>
+              </li>
+
+              <!-- 2001 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0 pb-12">
+                <!-- Left spacer -->
+                <div class="hidden md:block"></div>
+                <!-- Centre dot -->
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-5 h-5 rounded-full bg-sky-500 border-4 border-white
+                            shadow-soft z-10" aria-hidden="true"></div>
+                <!-- Right content -->
+                <div class="reveal md:pl-12 flex flex-col gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-sky-100 text-sky-700
+                               text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full w-fit">
+                    2001
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">Secondary Section Opens</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: e.g. Launched Form 1–4 with a dedicated KCSE track, producing
+                    the school's first cohort of national exam candidates in 2004 with an
+                    impressive mean grade of B.]
+                  </p>
+                </div>
+              </li>
+
+              <!-- 2008 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0 pb-12">
+                <div class="reveal md:pr-12 md:text-right flex flex-col md:items-end gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-leaf-100 text-leaf-700
+                               text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full w-fit">
+                    2008
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">New Campus Development</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: e.g. Relocated to the current 12-acre campus in Karen, opening
+                    state-of-the-art science laboratories, a modern library, and a
+                    600-seat auditorium.]
+                  </p>
+                </div>
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-5 h-5 rounded-full bg-leaf-500 border-4 border-white
+                            shadow-soft z-10" aria-hidden="true"></div>
+                <div class="hidden md:block"></div>
+              </li>
+
+              <!-- 2014 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0 pb-12">
+                <div class="hidden md:block"></div>
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-5 h-5 rounded-full bg-sky-500 border-4 border-white
+                            shadow-soft z-10" aria-hidden="true"></div>
+                <div class="reveal md:pl-12 flex flex-col gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-sky-100 text-sky-700
+                               text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full w-fit">
+                    2014
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">Digital Learning Launch</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: e.g. Rolled out smart classrooms and a 1:1 tablet programme
+                    for all learners from Grade 4 upward, among the first 10 schools in
+                    Kenya to do so at this scale.]
+                  </p>
+                </div>
+              </li>
+
+              <!-- 2017 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0 pb-12">
+                <div class="reveal md:pr-12 md:text-right flex flex-col md:items-end gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-leaf-100 text-leaf-700
+                               text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full w-fit">
+                    2017
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">CBC Pilot School</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: e.g. Selected by KICD as one of 50 national pilot schools
+                    for the Competency-Based Curriculum, earning full accreditation and
+                    shaping CBC policy through teacher feedback.]
+                  </p>
+                </div>
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-5 h-5 rounded-full bg-leaf-500 border-4 border-white
+                            shadow-soft z-10" aria-hidden="true"></div>
+                <div class="hidden md:block"></div>
+              </li>
+
+              <!-- 2024 -->
+              <li class="relative grid md:grid-cols-2 gap-6 md:gap-0">
+                <div class="hidden md:block"></div>
+                <div class="hidden md:flex absolute left-1/2 top-1 -translate-x-1/2
+                            w-6 h-6 rounded-full bg-brand-gradient border-4 border-white
+                            shadow-medium z-10" aria-hidden="true"></div>
+                <div class="reveal md:pl-12 flex flex-col gap-2">
+                  <span class="inline-flex items-center gap-1.5 bg-brand-gradient
+                               text-white text-xs font-bold uppercase tracking-wide
+                               px-3 py-1 rounded-full w-fit">
+                    2024
+                  </span>
+                  <h4 class="font-heading font-bold text-ink text-lg">30 Years of Excellence</h4>
+                  <p class="text-sm text-ink/65 leading-relaxed max-w-sm">
+                    [REPLACE: e.g. Celebrated three decades with a national ranking of
+                    Top 5 CBC Schools, a 97 % university placement rate, and an alumni
+                    network spanning 40+ countries.]
+                  </p>
+                </div>
+              </li>
+
+            </ol>
+          </div><!-- /timeline -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  3. MISSION / VISION / VALUES                      ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="mission-vision"
+      aria-labelledby="mvv-heading"
+      class="py-20 lg:py-28 bg-ink overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="reveal text-leaf-400 font-semibold text-sm uppercase tracking-widest mb-3">
+            What Drives Us
+          </p>
+          <h2 id="mvv-heading"
+              class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white">
+            Our Mission, Vision &amp; Values
+          </h2>
+        </div>
+
+        <!-- Mission + Vision cards — 2-col -->
+        <div class="reveal-group grid md:grid-cols-2 gap-6 mb-6">
+
+          <!-- Mission -->
+          <article class="reveal bg-white/5 border border-white/10 rounded-4xl p-10
+                          hover:bg-white/10 transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-leaf-500/20 flex items-center
+                        justify-center mb-6" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-leaf-400"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3">Our Mission</h3>
+            <p class="text-sky-100/75 leading-relaxed">
+              [REPLACE: e.g. To provide a transformative, CBC-aligned education that
+              equips every learner with the knowledge, skills, values, and confidence
+              to lead a purposeful life and contribute meaningfully to Kenyan society
+              and the wider world.]
+            </p>
+          </article>
+
+          <!-- Vision -->
+          <article class="reveal bg-white/5 border border-white/10 rounded-4xl p-10
+                          hover:bg-white/10 transition-colors duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-sky-500/20 flex items-center
+                        justify-center mb-6" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-sky-400"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3">Our Vision</h3>
+            <p class="text-sky-100/75 leading-relaxed">
+              [REPLACE: e.g. To be Kenya's leading school in holistic, competency-based
+              education — a place where every learner discovers their unique potential
+              and every graduate leaves as a confident, compassionate, and globally
+              competitive citizen.]
+            </p>
+          </article>
+        </div>
+
+        <!-- Values — 3-col grid -->
+        <div class="reveal-group grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <article class="value-card accent-leaf reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Excellence</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              We set and pursue the highest standards in academic achievement,
+              character formation, and co-curricular excellence — never settling
+              for good when great is within reach.
+            </p>
+          </article>
+
+          <article class="value-card accent-sky reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Integrity</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              Honesty, transparency, and accountability are non-negotiable — in the
+              classroom, on the sports field, and in every interaction between
+              learners, staff, and families.
+            </p>
+          </article>
+
+          <article class="value-card accent-ink reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Inclusivity</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              Every learner — regardless of background, ability, or learning style —
+              is seen, valued, and given the support they need to thrive within our
+              diverse and welcoming community.
+            </p>
+          </article>
+
+          <article class="value-card accent-leaf reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Innovation</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              We embrace curiosity and creative problem-solving, preparing learners
+              for a rapidly evolving world by fostering critical thinking, digital
+              fluency, and entrepreneurial mindsets.
+            </p>
+          </article>
+
+          <article class="value-card accent-sky reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Community</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              Learning happens in relationship. We cultivate a warm, collaborative
+              culture that honours family, celebrates diversity, and keeps EagleNest
+              deeply rooted in its Kenyan identity.
+            </p>
+          </article>
+
+          <article class="value-card accent-ink reveal bg-white rounded-3xl p-8
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <h3 class="font-heading font-bold text-ink text-lg mb-2">Stewardship</h3>
+            <p class="text-sm text-ink/65 leading-relaxed">
+              We instil in learners a responsibility to care for our environment,
+              our nation, and one another — shaping graduates who give back to the
+              communities that shaped them.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  4. PRINCIPAL'S MESSAGE                            ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="principals-message"
+      aria-labelledby="principal-heading"
+      class="py-20 lg:py-28 bg-sky-50 overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Label -->
+        <p class="reveal text-center text-leaf-600 font-semibold text-sm
+                  uppercase tracking-widest mb-12">
+          A Message from the Principal
+        </p>
+
+        <div class="grid lg:grid-cols-3 gap-12 items-start">
+
+          <!-- Portrait column -->
+          <div class="reveal-left flex flex-col items-center lg:items-start gap-5">
+            <!-- Photo -->
+            <div class="relative w-56 h-56 rounded-full overflow-hidden shadow-strong
+                        border-4 border-white mx-auto">
+              <img
+                src="Assets/Images/principal.jpg"
+                alt="[REPLACE: Mrs. Grace Wanjiku, Principal of EagleNest Academy]"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+            <!-- Name card -->
+            <div class="bg-white rounded-3xl px-7 py-5 shadow-soft text-center
+                        lg:text-left w-full max-w-xs mx-auto">
+              <p class="font-heading font-bold text-ink text-lg leading-tight">
+                [REPLACE: Mrs. Grace Wanjiku]
+              </p>
+              <p class="text-sm text-leaf-600 font-semibold mt-0.5">Principal</p>
+              <p class="text-xs text-ink/50 mt-1">
+                [REPLACE: B.Ed (Hons), M.Ed — University of Nairobi]
+              </p>
+              <p class="text-xs text-ink/40 mt-0.5">
+                [REPLACE: e.g. In post since 2009]
+              </p>
+            </div>
+          </div>
+
+          <!-- Message column — spans 2 cols -->
+          <div class="lg:col-span-2">
+            <h2 id="principal-heading"
+                class="reveal text-2xl sm:text-3xl lg:text-4xl font-heading font-bold
+                       text-ink leading-tight mb-8">
+              "An Eagle Doesn't Fight the Storm — It Rises Above It."
+            </h2>
+
+            <div class="space-y-5 text-ink/70 text-base leading-relaxed">
+              <p class="reveal">
+                Dear Families, Learners, and Friends of EagleNest,
+              </p>
+              <p class="reveal">
+                [REPLACE: Para 1 — e.g. It is my profound honour to lead a school whose
+                story is not merely written in exam results or league tables, but in the
+                lives of every young person who has passed through our gates. From the
+                child who discovered a love of science in our Grade 3 class, to the
+                alumnus who now practises medicine in Kisumu — EagleNest's real
+                achievement is people.]
+              </p>
+              <p class="reveal">
+                [REPLACE: Para 2 — e.g. As we implement the Competency-Based Curriculum
+                in full, we are moving beyond rote memorisation toward genuine
+                understanding — equipping learners not just with knowledge, but with
+                the confidence to apply it. Our classrooms are becoming places of
+                inquiry, creativity, and deep conversation.]
+              </p>
+              <p class="reveal">
+                [REPLACE: Para 3 — e.g. I invite you to walk with us — as a parent,
+                a prospective family, or a community partner. Together, we will
+                continue to build an institution that makes Kenya proud.]
+              </p>
+              <p class="reveal font-semibold text-ink">
+                Warmly,<br/>
+                [REPLACE: Mrs. Grace Wanjiku]
+              </p>
+            </div>
+
+            <!-- Signature image (optional) -->
+            <div class="reveal mt-6">
+              <img
+                src="Assets/Images/principal-signature.png"
+                alt="Handwritten signature of the Principal"
+                class="h-14 w-auto opacity-70"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  5. LEADERSHIP & TEACHING STAFF GRID              ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="leadership"
+      aria-labelledby="staff-heading"
+      class="py-20 lg:py-28 bg-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section header -->
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="reveal text-sky-500 font-semibold text-sm uppercase tracking-widest mb-3">
+            The People Behind the Promise
+          </p>
+          <h2 id="staff-heading"
+              class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-ink mb-4">
+            Our Leadership &amp; Teaching Team
+          </h2>
+          <p class="reveal text-ink/60 text-base">
+            Experienced, passionate educators committed to every learner's success.
+          </p>
+        </div>
+
+        <!-- ── Leadership row ─────────────────────────────── -->
+        <div class="mb-10">
+          <h3 class="reveal text-lg font-heading font-bold text-ink mb-6 pb-3
+                     border-b border-sky-100">
+            School Leadership
+          </h3>
+          <div class="reveal-group grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Staff Card 1 — Principal -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <!-- Photo -->
+              <div class="relative h-64 overflow-hidden bg-sky-50">
+                <img
+                  src="Assets/Images/staff-principal.jpg"
+                  alt="[REPLACE: Portrait of Mrs. Grace Wanjiku, Principal]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <!-- Hover overlay with qualification -->
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.Ed (Hons), M.Ed]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    University of Nairobi
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 15 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <!-- Details -->
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Mrs. Grace Wanjiku]
+                </h4>
+                <p class="text-leaf-600 text-sm font-semibold mt-0.5">Principal</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.Ed (Hons), M.Ed · University of Nairobi]
+                </p>
+              </div>
+            </article>
+
+            <!-- Staff Card 2 — Deputy Principal Academics -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <div class="relative h-64 overflow-hidden bg-sky-50">
+                <img
+                  src="Assets/Images/staff-deputy-academics.jpg"
+                  alt="[REPLACE: Portrait of Deputy Principal Academics]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.Ed (Science), M.Ed Curriculum]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    [REPLACE: Kenyatta University]
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 11 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Mr. Samuel Ochieng]
+                </h4>
+                <p class="text-sky-600 text-sm font-semibold mt-0.5">Deputy Principal — Academics</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.Ed (Science), M.Ed · Kenyatta University]
+                </p>
+              </div>
+            </article>
+
+            <!-- Staff Card 3 — Deputy Principal Welfare -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <div class="relative h-64 overflow-hidden bg-sky-50">
+                <img
+                  src="Assets/Images/staff-deputy-welfare.jpg"
+                  alt="[REPLACE: Portrait of Deputy Principal Student Welfare]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.A. Education, PGDip Counselling]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    [REPLACE: Moi University]
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 9 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Ms. Faith Njeri]
+                </h4>
+                <p class="text-sky-600 text-sm font-semibold mt-0.5">Deputy Principal — Student Welfare</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.A. Education, PGDip Counselling · Moi University]
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ── Teaching staff row ─────────────────────────── -->
+        <div>
+          <h3 class="reveal text-lg font-heading font-bold text-ink mb-6 pb-3
+                     border-b border-sky-100">
+            Lead Teachers
+          </h3>
+          <div class="reveal-group grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Staff Card 4 — Head of STEM -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <div class="relative h-64 overflow-hidden bg-leaf-50">
+                <img
+                  src="Assets/Images/staff-stem.jpg"
+                  alt="[REPLACE: Portrait of Head of STEM Department]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.Sc. Mathematics, PGDE]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    [REPLACE: University of Nairobi]
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 7 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Mr. James Muthoni]
+                </h4>
+                <p class="text-leaf-600 text-sm font-semibold mt-0.5">Head of STEM</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.Sc. Mathematics, PGDE · University of Nairobi]
+                </p>
+              </div>
+            </article>
+
+            <!-- Staff Card 5 — Head of Languages -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <div class="relative h-64 overflow-hidden bg-leaf-50">
+                <img
+                  src="Assets/Images/staff-languages.jpg"
+                  alt="[REPLACE: Portrait of Head of Languages Department]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.A. Literature &amp; Linguistics, M.A.]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    [REPLACE: Egerton University]
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 8 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Mrs. Amina Hassan]
+                </h4>
+                <p class="text-leaf-600 text-sm font-semibold mt-0.5">Head of Languages</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.A. Literature &amp; Linguistics, M.A. · Egerton University]
+                </p>
+              </div>
+            </article>
+
+            <!-- Staff Card 6 — Head of Creative Arts -->
+            <article class="staff-card reveal group relative bg-white rounded-4xl
+                            overflow-hidden shadow-soft hover:shadow-strong
+                            transition-all duration-300 hover:-translate-y-1.5">
+              <div class="relative h-64 overflow-hidden bg-leaf-50">
+                <img
+                  src="Assets/Images/staff-arts.jpg"
+                  alt="[REPLACE: Portrait of Head of Creative Arts Department]"
+                  class="w-full h-full object-cover object-top
+                         group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div class="staff-overlay absolute inset-0 bg-ink/80 flex flex-col
+                            items-center justify-center gap-2 p-6 text-center">
+                  <p class="text-white font-semibold text-sm">
+                    [REPLACE: B.Ed Creative Arts, Dip. Theatre]
+                  </p>
+                  <p class="text-sky-200 text-xs">
+                    [REPLACE: Technical University of Kenya]
+                  </p>
+                  <p class="text-leaf-400 text-xs font-medium mt-1">
+                    [REPLACE: e.g. 6 years at EagleNest]
+                  </p>
+                </div>
+              </div>
+              <div class="p-5">
+                <h4 class="font-heading font-bold text-ink text-base leading-tight">
+                  [REPLACE: Ms. Diana Akinyi]
+                </h4>
+                <p class="text-leaf-600 text-sm font-semibold mt-0.5">Head of Creative Arts</p>
+                <p class="text-ink/50 text-xs mt-1">
+                  [REPLACE: B.Ed Creative Arts, Dip. Theatre · TUK]
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div><!-- /teaching staff -->
+
+        <!-- View all staff link -->
+        <div class="text-center mt-12 reveal">
+          <p class="text-ink/50 text-sm">
+            EagleNest employs
+            <strong class="text-ink">92+ qualified educators</strong>
+            across all departments.
+            <a href="contact.html" class="text-leaf-600 hover:text-leaf-700 font-semibold
+                                         underline underline-offset-2 transition-colors">
+              Get in touch
+            </a>
+            to speak directly with a department head.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  6. FACILITIES                                     ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="facilities"
+      aria-labelledby="facilities-heading"
+      class="py-20 lg:py-28 bg-brand-gradient-soft"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="reveal text-leaf-600 font-semibold text-sm uppercase tracking-widest mb-3">
+            Where Learning Comes Alive
+          </p>
+          <h2 id="facilities-heading"
+              class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-ink mb-4">
+            World-Class Facilities
+          </h2>
+          <p class="reveal text-ink/65 text-base">
+            Every space at EagleNest is designed to inspire, challenge, and support
+            every type of learner.
+          </p>
+        </div>
+
+        <div class="reveal-group grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Facility: Smart Classrooms -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-classroom.jpg"
+                alt="A modern smart classroom with interactive whiteboards and tablet workstations"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">Smart Classrooms</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. 32 smart classrooms equipped with interactive flat-panel
+                displays, fibre internet, and individual tablet docking stations
+                supporting blended learning across all subjects.]
+              </p>
+            </div>
+          </article>
+
+          <!-- Facility: Library -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-library.jpg"
+                alt="EagleNest Academy library with floor-to-ceiling bookshelves and reading tables"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">Resource Library</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. A two-storey library holding over 15,000 physical titles,
+                online access to international academic databases, and dedicated
+                reading zones for different age groups and learning styles.]
+              </p>
+            </div>
+          </article>
+
+          <!-- Facility: Science Labs -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-lab.jpg"
+                alt="Students conducting chemistry experiments in a well-equipped science laboratory"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">Science Laboratories</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. Three fully stocked labs — Physics, Chemistry, and
+                Biology — with fume hoods, digital microscopes, and modern safety
+                infrastructure for hands-on practical learning from Grade 7 upward.]
+              </p>
+            </div>
+          </article>
+
+          <!-- Facility: Sports & Athletics -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-sports.jpg"
+                alt="EagleNest Academy 400-metre athletics track and football pitch"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 8v4l3 3"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">Sports &amp; Athletics</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. A 400-metre synthetic athletics track, FIFA-standard
+                football pitch, netball and basketball courts, an Olympic-size
+                swimming pool, and a fully equipped gymnasium.]
+              </p>
+            </div>
+          </article>
+
+          <!-- Facility: Performing Arts Centre -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-arts-centre.jpg"
+                alt="The EagleNest performing arts centre stage with professional lighting"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-sky-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2
+                           1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2
+                           1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">Performing Arts Centre</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. A 600-seat auditorium with professional lighting and
+                sound, a music recording suite, dance studio, and three dedicated
+                rehearsal rooms used for drama, choir, and cultural events.]
+              </p>
+            </div>
+          </article>
+
+          <!-- Facility: STEM Innovation Hub -->
+          <article class="facility-card reveal bg-white rounded-4xl overflow-hidden
+                          shadow-soft hover:shadow-medium transition-shadow duration-300">
+            <div class="h-48 overflow-hidden relative">
+              <img
+                src="Assets/Images/facility-stem-hub.jpg"
+                alt="Students using 3D printers and robotics kits in the STEM innovation hub"
+                class="facility-img w-full h-full object-cover transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <div class="w-10 h-10 rounded-xl bg-leaf-100 flex items-center
+                          justify-center mb-4" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0
+                           002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0
+                           001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0
+                           00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0
+                           00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0
+                           00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0
+                           00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0
+                           001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07
+                           2.572-1.065z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <h3 class="font-heading font-bold text-ink text-lg mb-1">STEM Innovation Hub</h3>
+              <p class="text-sm text-ink/65 leading-relaxed">
+                [REPLACE: e.g. A maker-space equipped with 3D printers, laser cutters,
+                Arduino robotics kits, and coding workstations — open to all learners
+                from Grade 5 and the base of our award-winning science fair teams.]
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /facilities grid -->
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  7. ACHIEVEMENTS COUNTERS                         ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="achievements"
+      aria-labelledby="achievements-heading"
+      class="py-20 lg:py-24 bg-ink text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14">
+          <p class="reveal text-leaf-400 font-semibold text-sm uppercase tracking-widest mb-3">
+            By the Numbers
+          </p>
+          <h2 id="achievements-heading"
+              class="reveal text-3xl sm:text-4xl font-heading font-bold text-white">
+            Three Decades of Achievement
+          </h2>
+        </div>
+
+        <dl class="reveal-group grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              Years Operating
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-leaf-400 order-1">
+              <span class="stat-counter" data-count="30" data-suffix="+">0</span>
+            </dd>
+          </div>
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              Learners Enrolled
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-leaf-400 order-1">
+              <span class="stat-counter" data-count="1450" data-suffix="+">0</span>
+            </dd>
+          </div>
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              Qualified Educators
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-sky-400 order-1">
+              <span class="stat-counter" data-count="92" data-suffix="+">0</span>
+            </dd>
+          </div>
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              University Placement
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-sky-400 order-1">
+              <span class="stat-counter" data-count="97" data-suffix="%">0</span>
+            </dd>
+          </div>
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              National Awards
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-leaf-400 order-1">
+              <span class="stat-counter" data-count="120" data-suffix="+">0</span>
+            </dd>
+          </div>
+
+          <div class="reveal flex flex-col items-center gap-1.5">
+            <dt class="text-sky-100/60 text-xs uppercase tracking-wide order-2 mt-1">
+              Alumni Network
+            </dt>
+            <dd class="text-4xl lg:text-5xl font-heading font-bold text-leaf-400 order-1">
+              <span class="stat-counter" data-count="8500" data-suffix="+">0</span>
+            </dd>
+          </div>
+
+        </dl>
+
+        <!-- Notable achievements list -->
+        <div class="mt-14 reveal">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-leaf-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. Ranked <strong class="text-white">#3 CBC School</strong>
+                in Nairobi County — Daily Nation Schools Survey 2024]
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-leaf-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. <strong class="text-white">National Science Fair Champions</strong>
+                — Kenya Science &amp; Engineering Fair, three years running (2022–2024)]
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-leaf-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. <strong class="text-white">KICD CBC Pilot Recognition</strong>
+                — awarded for Outstanding Implementation of the Competency-Based Curriculum, 2023]
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-sky-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. <strong class="text-white">National Drama Festival</strong>
+                — Gold Award, Secondary Category, 2022 &amp; 2024]
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-sky-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. <strong class="text-white">Inter-Schools Athletics</strong>
+                — Overall Champions, Nairobi Region, five of the last six years]
+              </p>
+            </div>
+
+            <div class="flex items-start gap-3 bg-white/5 border border-white/10
+                        rounded-2xl px-5 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   class="w-5 h-5 text-sky-400 mt-0.5 shrink-0"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <p class="text-sm text-sky-100/75">
+                [REPLACE: e.g. <strong class="text-white">ISO 21001:2018 Certified</strong>
+                — Educational Organisations Management System, renewed 2023]
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  8. CTA — ADMISSIONS                              ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="about-cta"
+      aria-labelledby="about-cta-heading"
+      class="py-20 lg:py-28 relative overflow-hidden"
+    >
+      <!-- Background gradient -->
+      <div class="absolute inset-0 bg-brand-gradient" aria-hidden="true"></div>
+
+      <!-- Decorative circles -->
+      <div class="absolute -top-20 -left-20 w-80 h-80 rounded-full
+                  bg-white/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full
+                  bg-white/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <p class="reveal inline-flex items-center gap-2 bg-white/20 border border-white/30
+                  text-white text-xs font-semibold uppercase tracking-widest
+                  px-4 py-1.5 rounded-full mb-6">
+          Enrolment Open · Term 1, 2025
+        </p>
+
+        <h2 id="about-cta-heading"
+            class="reveal text-3xl sm:text-5xl font-heading font-bold
+                   text-white leading-tight mb-6">
+          Ready to Join the<br/>EagleNest Family?
+        </h2>
+        <p class="reveal text-white/85 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+          Spaces for the 2025 academic year are limited. Visit our Admissions page
+          to download application forms, view the fee structure, and book a
+          campus tour — or call us today to speak with our admissions team.
+        </p>
+
+        <div class="reveal flex flex-wrap justify-center gap-4">
+          <a href="Admissions.html"
+             class="inline-flex items-center gap-2 bg-white text-ink
+                    font-heading font-bold text-base px-8 py-4 rounded-full
+                    shadow-strong hover:-translate-y-0.5
+                    transition-all duration-200">
+            Apply Now
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="contact.html"
+             class="inline-flex items-center gap-2 border-2 border-white/70
+                    text-white hover:bg-white/15 font-heading font-bold text-base
+                    px-8 py-4 rounded-full transition-all duration-200">
+            Contact Admissions
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-footer"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════ -->
+  <script src="Assets/js/components.js"></script>
+  <script src="Assets/js/main.js"></script>
+
+</body>
+</html>

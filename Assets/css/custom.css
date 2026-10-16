@@ -1,0 +1,130 @@
+/* ============================================================
+   EagleNest Academy — Custom Base Styles
+   Complements Tailwind; loaded after the CDN stylesheet.
+   ============================================================ */
+
+/* ── Smooth scrolling ──────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Base body ─────────────────────────────────────────────── */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0F2A43;           /* ink */
+  background-color: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Heading font ──────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.font-heading {
+  font-family: "Century Gothic", "Questrial", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0F2A43;
+}
+
+/* ── Focus styles (accessible ring) ───────────────────────── */
+:focus-visible {
+  outline: 3px solid #0EA5E9;   /* sky-500 */
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Brand gradient helper ─────────────────────────────────── */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #0EA5E9 0%, #22C55E 100%);
+}
+
+.bg-brand-gradient-soft {
+  background: linear-gradient(135deg, #E0F2FE 0%, #DCFCE7 100%);
+}
+
+/* ── Scroll-reveal animation classes ───────────────────────── */
+/* Default (hidden) state — added by JS to every .reveal element */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Active (visible) state — toggled by IntersectionObserver */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger siblings inside a .reveal-group */
+.reveal-group .reveal:nth-child(1)  { transition-delay: 0ms;   }
+.reveal-group .reveal:nth-child(2)  { transition-delay: 80ms;  }
+.reveal-group .reveal:nth-child(3)  { transition-delay: 160ms; }
+.reveal-group .reveal:nth-child(4)  { transition-delay: 240ms; }
+.reveal-group .reveal:nth-child(5)  { transition-delay: 320ms; }
+.reveal-group .reveal:nth-child(6)  { transition-delay: 400ms; }
+
+/* Slide-from-left variant */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide-from-right variant */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Active navigation link ────────────────────────────────── */
+.active-link {
+  color: #22C55E !important;         /* leaf-500 */
+  font-weight: 700;
+  border-bottom: 2px solid #22C55E;
+  padding-bottom: 2px;
+}
+
+/* ── Back-to-top button ─────────────────────────────────────── */
+#back-to-top {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Accordion content panel ───────────────────────────────── */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.accordion-content.open {
+  max-height: 600px;          /* large enough for any panel */
+}
+
+/* ── Utility: visually-hidden (screen-reader only) ─────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}

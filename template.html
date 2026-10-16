@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO meta (update per page) ──────────────────────── -->
+  <title>Page Title — EagleNest Academy</title>
+  <meta name="description" content="EagleNest Academy: nurturing tomorrow's leaders through academic excellence and character development in Nairobi, Kenya." />
+  <meta name="theme-color" content="#0F2A43" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="EagleNest Academy" />
+  <meta property="og:title"       content="Page Title — EagleNest Academy" />
+  <meta property="og:description" content="Nurturing tomorrow's leaders." />
+  <meta property="og:image"       content="Assets/Images/og-image.jpg" />
+
+  <!-- Favicon (swap with real assets) -->
+  <link rel="icon"             href="Assets/Icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="Assets/Icons/apple-touch-icon.png" />
+
+  <!-- ── Google Fonts ─────────────────────────────────────── -->
+  <!--
+    Questrial is used as fallback heading font alongside Century Gothic.
+    Montserrat covers the body.
+    Subset to latin; display=swap avoids FOIT.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Questrial&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ── Tailwind config MUST come before the CDN script ─── -->
+  <script src="Assets/js/tailwind-config.js"></script>
+
+  <!-- ── Tailwind CSS via CDN (v3) ────────────────────────── -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ── Custom stylesheet ────────────────────────────────── -->
+  <link rel="stylesheet" href="Assets/css/custom.css" />
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-header"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN CONTENT
+       Replace the placeholder section below with page content.
+  ════════════════════════════════════════════════════════════ -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── Hero placeholder ───────────────────────────────── -->
+    <section class="relative flex items-center justify-center min-h-[70vh]
+                    bg-brand-gradient-soft px-4 py-20 text-center overflow-hidden">
+      <!-- Decorative blob -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full
+                  bg-sky-100 opacity-50 blur-3xl pointer-events-none"
+           aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto reveal">
+        <p class="text-leaf-500 font-heading font-bold text-sm uppercase tracking-widest mb-4">
+          Welcome to
+        </p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-ink leading-tight mb-6">
+          EagleNest<br/>
+          <span class="text-sky-500">Academy</span>
+        </h1>
+        <p class="text-lg text-ink/70 mb-8 max-w-xl mx-auto">
+          Nurturing tomorrow's leaders through academic excellence, character
+          development, and a culture of innovation.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="Admissions.html"
+             class="inline-flex items-center gap-2 bg-leaf-500 hover:bg-leaf-600
+                    text-white font-heading font-bold px-7 py-3.5 rounded-full
+                    shadow-medium hover:shadow-strong transition-all duration-200">
+            Apply Now
+          </a>
+          <a href="about.html"
+             class="inline-flex items-center gap-2 border-2 border-ink text-ink
+                    hover:bg-ink hover:text-white font-heading font-bold
+                    px-7 py-3.5 rounded-full transition-all duration-200">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats strip (example usage of stat counters) ───── -->
+    <section class="bg-ink text-white py-12">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ul class="reveal-group grid grid-cols-2 md:grid-cols-4 gap-8 text-center list-none">
+          <li class="reveal">
+            <p class="text-4xl font-heading font-bold text-leaf-500">
+              <span class="stat-counter" data-count="1200" data-suffix="+">0</span>
+            </p>
+            <p class="text-sm mt-1 text-sky-100">Students Enrolled</p>
+          </li>
+          <li class="reveal">
+            <p class="text-4xl font-heading font-bold text-leaf-500">
+              <span class="stat-counter" data-count="85" data-suffix="+">0</span>
+            </p>
+            <p class="text-sm mt-1 text-sky-100">Qualified Staff</p>
+          </li>
+          <li class="reveal">
+            <p class="text-4xl font-heading font-bold text-leaf-500">
+              <span class="stat-counter" data-count="30" data-suffix="+">0</span>
+            </p>
+            <p class="text-sm mt-1 text-sky-100">Years of Excellence</p>
+          </li>
+          <li class="reveal">
+            <p class="text-4xl font-heading font-bold text-leaf-500">
+              <span class="stat-counter" data-count="96" data-suffix="%">0</span>
+            </p>
+            <p class="text-sm mt-1 text-sky-100">University Placement</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Accordion example ───────────────────────────────── -->
+    <section class="py-16 px-4 max-w-3xl mx-auto">
+      <h2 class="text-3xl font-heading font-bold text-center mb-10 reveal">
+        Frequently Asked Questions
+      </h2>
+      <div class="accordion-group flex flex-col gap-3">
+
+        <!-- FAQ item -->
+        <div class="accordion-item border border-sky-100 rounded-2xl overflow-hidden shadow-soft reveal">
+          <button class="accordion-trigger w-full flex items-center justify-between
+                         px-6 py-4 text-left font-heading font-bold text-ink
+                         hover:bg-sky-50 transition-colors duration-200"
+                  aria-expanded="false">
+            <span>What grades does EagleNest Academy offer?</span>
+            <svg class="accordion-chevron w-5 h-5 shrink-0 transition-transform duration-300"
+                 xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6 text-ink/80 text-sm leading-relaxed">
+            <p class="py-4">
+              We offer classes from Grade 1 through Form 6 (A-Level), providing a
+              seamless learning journey from early primary through to pre-university.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ item -->
+        <div class="accordion-item border border-sky-100 rounded-2xl overflow-hidden shadow-soft reveal">
+          <button class="accordion-trigger w-full flex items-center justify-between
+                         px-6 py-4 text-left font-heading font-bold text-ink
+                         hover:bg-sky-50 transition-colors duration-200"
+                  aria-expanded="false">
+            <span>How do I apply for admission?</span>
+            <svg class="accordion-chevron w-5 h-5 shrink-0 transition-transform duration-300"
+                 xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="accordion-content px-6 text-ink/80 text-sm leading-relaxed">
+            <p class="py-4">
+              Visit our <a href="Admissions.html" class="text-leaf-500 hover:underline font-semibold">Admissions page</a>
+              for a step-by-step guide, downloadable forms, and term dates.
+              You may also contact our admissions office directly by phone or email.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /accordion-group -->
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-footer"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+       Load order:
+         1. tailwind-config.js  (already in <head>)
+         2. components.js       — injects header, footer, FAB
+         3. main.js             — behaviours (menu, reveal, etc.)
+         4. Page-specific JS    — inline or separate file
+  ════════════════════════════════════════════════════════════ -->
+  <script src="Assets/js/components.js"></script>
+  <script src="Assets/js/main.js"></script>
+
+  <!--
+    Page-specific scripts go here, e.g.:
+    <script src="Assets/js/gallery.js"></script>
+    <script src="Assets/js/forms.js"></script>
+  -->
+</body>
+</html>

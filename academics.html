@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ──────────────────────────────────────── -->
+  <title>Academics — EagleNest Academy | CBC Curriculum, Programmes &amp; Support</title>
+  <meta name="description"
+        content="Explore EagleNest Academy's CBC-aligned academic programmes —
+                 Pre-Primary, Primary, and Junior School. View subjects, learning
+                 schedules, co-curricular support, and download our curriculum
+                 guides." />
+  <meta name="keywords"
+        content="EagleNest academics, CBC curriculum Kenya, primary school subjects Nairobi,
+                 junior school CBC, competency based curriculum, EagleNest timetable" />
+  <link rel="canonical" href="https://www.eaglenestacademy.ac.ke/academics.html" />
+
+  <!-- ── Open Graph ───────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="EagleNest Academy" />
+  <meta property="og:url"         content="https://www.eaglenestacademy.ac.ke/academics.html" />
+  <meta property="og:title"       content="Academics at EagleNest Academy — CBC Programmes" />
+  <meta property="og:description" content="From Playgroup to Junior School — discover our CBC-aligned curriculum, subjects, assessment approach, and daily learning schedule." />
+  <meta property="og:image"       content="Assets/Images/og-academics.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Academics at EagleNest Academy — CBC Programmes" />
+  <meta name="twitter:description" content="CBC-aligned learning from Pre-Primary to Junior School in Nairobi." />
+  <meta name="twitter:image"       content="Assets/Images/og-academics.jpg" />
+
+  <!-- ── Favicons ─────────────────────────────────────────── -->
+  <link rel="icon"             href="Assets/Icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="Assets/Icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0F2A43" />
+
+  <!-- ── Google Fonts ─────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Questrial&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ── Tailwind config MUST precede CDN ─────────────────── -->
+  <script src="Assets/js/tailwind-config.js"></script>
+
+  <!-- ── Tailwind CSS CDN ──────────────────────────────────── -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ── Custom stylesheet ─────────────────────────────────── -->
+  <link rel="stylesheet" href="Assets/css/custom.css" />
+
+  <!-- ── Page-level styles ─────────────────────────────────── -->
+  <style>
+    /* ── Banner overlay ─────────────────────────────────────── */
+    .page-banner-overlay::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+        rgba(15,42,67,0.85) 0%,
+        rgba(15,42,67,0.50) 100%);
+      pointer-events: none;
+    }
+
+    /* ── Tab button active state ────────────────────────────── */
+    .tab-btn[aria-selected="true"] {
+      background-color: #0F2A43;   /* ink */
+      color: #ffffff;
+      box-shadow: 0 4px 16px rgba(15,42,67,0.18);
+    }
+    .tab-btn[aria-selected="false"] {
+      background-color: transparent;
+      color: #0F2A43;
+    }
+
+    /* ── Tab panel visibility ────────────────────────────────── */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── Subject card hover ─────────────────────────────────── */
+    .subject-card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* ── Timeline item ──────────────────────────────────────── */
+    .day-timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, #22C55E, #0EA5E9);
+      border-radius: 2px;
+    }
+
+    /* ── Download card hover ────────────────────────────────── */
+    .download-card:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ── CBC pillar badge ───────────────────────────────────── */
+    .cbc-pillar {
+      background: linear-gradient(135deg, #F0FDF4, #E0F2FE);
+    }
+  </style>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-header"></div>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  1. PAGE HEADER BANNER + BREADCRUMB               ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      class="page-banner-overlay relative min-h-[320px] md:min-h-[400px]
+             flex flex-col justify-end overflow-hidden bg-ink"
+      aria-label="Academics page header"
+    >
+      <img
+        src="Assets/Academics/academics-banner.jpg"
+        alt="EagleNest Academy learners collaborating on a project in a bright classroom"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <!-- Decorative blob -->
+      <div class="absolute top-0 right-0 w-96 h-96 rounded-full
+                  bg-sky-500/10 blur-3xl pointer-events-none z-10" aria-hidden="true"></div>
+
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+                  w-full pb-12 pt-24">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex flex-wrap items-center gap-2 text-sm text-white/60
+                     list-none m-0 p-0">
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors">Home</a>
+            </li>
+            <li aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </li>
+            <li>
+              <span class="text-white font-medium" aria-current="page">Academics</span>
+            </li>
+          </ol>
+        </nav>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold
+                   text-white leading-tight max-w-2xl">
+          Academics at EagleNest Academy
+        </h1>
+        <p class="mt-3 text-sky-100/80 text-base max-w-xl">
+          A CBC-aligned curriculum that builds competencies, ignites curiosity,
+          and prepares every learner for the future.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  2. CBC CURRICULUM OVERVIEW                        ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="cbc-overview"
+      aria-labelledby="cbc-heading"
+      class="py-20 lg:py-28 bg-white overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          <!-- Text -->
+          <div>
+            <p class="reveal text-leaf-500 font-semibold text-sm
+                      uppercase tracking-widest mb-3">
+              Our Curriculum Framework
+            </p>
+            <h2 id="cbc-heading"
+                class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading
+                       font-bold text-ink leading-tight mb-6">
+              Built on the Kenya<br/>Competency-Based<br/>Curriculum
+            </h2>
+            <div class="space-y-4 text-ink/70 text-base leading-relaxed">
+              <p class="reveal">
+                EagleNest Academy is a fully accredited CBC school, recognised by
+                the Kenya National Examinations Council (KNEC) and the Kenya
+                Institute of Curriculum Development (KICD). Our educators completed
+                KICD-certified CBC training and continue with annual professional
+                development to ensure every lesson meets the national framework.
+              </p>
+              <p class="reveal">
+                Under CBC, learning moves away from rote memorisation toward the
+                development of seven core competencies: Communication and
+                Collaboration, Critical Thinking and Problem-Solving, Creativity
+                and Imagination, Citizenship, Digital Literacy, Learning to Learn,
+                and Self-Efficacy. Every subject, project, and assessment at
+                EagleNest is mapped to these competencies.
+              </p>
+              <p class="reveal">
+                [REPLACE: Add any school-specific curriculum highlights — e.g.
+                bilingual instruction, enrichment tracks, gifted-learner programmes,
+                learning support unit, or specific CBC pilot recognition.]
+              </p>
+            </div>
+
+            <!-- KNEC / KICD badges -->
+            <div class="reveal mt-8 flex flex-wrap gap-3">
+              <span class="inline-flex items-center gap-2 bg-leaf-50 border
+                           border-leaf-200 text-leaf-700 text-xs font-bold
+                           uppercase tracking-wide px-4 py-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a
+                           11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0
+                           5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03
+                           9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                KNEC Accredited
+              </span>
+              <span class="inline-flex items-center gap-2 bg-sky-50 border
+                           border-sky-200 text-sky-700 text-xs font-bold
+                           uppercase tracking-wide px-4 py-2 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a
+                           11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0
+                           5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03
+                           9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                KICD Certified
+              </span>
+              <span class="inline-flex items-center gap-2 bg-ink/5 border
+                           border-ink/15 text-ink text-xs font-bold
+                           uppercase tracking-wide px-4 py-2 rounded-full">
+                CBC Pilot School
+              </span>
+            </div>
+          </div>
+
+          <!-- CBC 7 Competencies visual -->
+          <div class="reveal-right">
+            <div class="relative">
+              <!-- Background image -->
+              <div class="rounded-4xl overflow-hidden shadow-strong aspect-[4/3]">
+                <img
+                  src="Assets/Academics/cbc-classroom.jpg"
+                  alt="EagleNest learners working in groups on a CBC project-based activity"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Floating competencies card -->
+              <div class="absolute -bottom-6 -left-4 lg:-left-10 bg-white
+                          rounded-3xl shadow-strong p-6 max-w-[280px]">
+                <p class="text-xs font-bold text-ink uppercase tracking-widest mb-3">
+                  CBC Core Competencies
+                </p>
+                <ul class="space-y-1.5 list-none m-0 p-0">
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-leaf-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Communication &amp; Collaboration
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-leaf-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Critical Thinking &amp; Problem-Solving
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Creativity &amp; Imagination
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Citizenship
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-leaf-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Digital Literacy
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Learning to Learn
+                  </li>
+                  <li class="flex items-center gap-2 text-xs text-ink/75">
+                    <span class="w-1.5 h-1.5 rounded-full bg-leaf-500 shrink-0"
+                          aria-hidden="true"></span>
+                    Self-Efficacy
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── CBC Pillars strip ─────────────────────────── -->
+        <div class="mt-20 reveal-group grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <div class="cbc-pillar reveal rounded-3xl p-6 flex flex-col gap-3">
+            <div class="w-10 h-10 rounded-xl bg-leaf-500/15 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477
+                         3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5
+                         1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0
+                         3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5
+                         18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-ink text-sm">
+              Values &amp; Ethics
+            </h3>
+            <p class="text-xs text-ink/60 leading-relaxed">
+              Character formation woven into every subject and every interaction
+              on campus, not confined to CRE or Social Studies alone.
+            </p>
+          </div>
+
+          <div class="cbc-pillar reveal rounded-3xl p-6 flex flex-col gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/15 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21
+                         12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5
+                         5 0 117.072 0l-.548.547A3.374 3.374 0 0014
+                         18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-ink text-sm">
+              Inquiry-Based Learning
+            </h3>
+            <p class="text-xs text-ink/60 leading-relaxed">
+              Learners ask questions, investigate answers, and present findings
+              — developing research skills from as early as Grade 1.
+            </p>
+          </div>
+
+          <div class="cbc-pillar reveal rounded-3xl p-6 flex flex-col gap-3">
+            <div class="w-10 h-10 rounded-xl bg-leaf-500/15 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10
+                         0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3
+                         3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0
+                         0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0
+                         016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0
+                         11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-ink text-sm">
+              Portfolio Assessment
+            </h3>
+            <p class="text-xs text-ink/60 leading-relaxed">
+              Progress measured through portfolios, projects, and continuous
+              assessment tasks — not just end-of-term examinations.
+            </p>
+          </div>
+
+          <div class="cbc-pillar reveal rounded-3xl p-6 flex flex-col gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/15 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012
+                         2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0
+                         012 2 2 2 0 104 0 2 2 0 012-2h1.064M15
+                         20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18
+                         0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-ink text-sm">
+              Global Citizenship
+            </h3>
+            <p class="text-xs text-ink/60 leading-relaxed">
+              Environmental stewardship, community service learning, and
+              intercultural education embedded across all year groups.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  3. PROGRAMME LEVEL TABS                           ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="programmes"
+      aria-labelledby="programmes-heading"
+      class="py-20 lg:py-28 bg-brand-gradient-soft"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <p class="reveal text-leaf-600 font-semibold text-sm
+                    uppercase tracking-widest mb-3">
+            Learning Pathways
+          </p>
+          <h2 id="programmes-heading"
+              class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading
+                     font-bold text-ink mb-4">
+            Our Three Learning Levels
+          </h2>
+          <p class="reveal text-ink/65 text-base">
+            Select a level below to explore the specific curriculum, learning
+            outcomes, and assessment approach for each pathway.
+          </p>
+        </div>
+
+        <!-- ── Tab navigation ─────────────────────────────── -->
+        <div class="reveal flex justify-center mb-10">
+          <div role="tablist"
+               aria-label="Programme levels"
+               class="inline-flex bg-white rounded-2xl shadow-soft p-1.5 gap-1
+                      flex-wrap justify-center">
+
+            <button
+              id="tab-preprimary"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-preprimary"
+              class="tab-btn font-heading font-bold text-sm px-6 py-3
+                     rounded-xl transition-all duration-200
+                     focus-visible:outline-2 focus-visible:outline-leaf-500"
+              type="button"
+            >
+              Pre-Primary
+              <span class="block text-[10px] font-normal opacity-75 leading-none mt-0.5">
+                PP1 – PP2
+              </span>
+            </button>
+
+            <button
+              id="tab-primary"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-primary"
+              class="tab-btn font-heading font-bold text-sm px-6 py-3
+                     rounded-xl transition-all duration-200
+                     focus-visible:outline-2 focus-visible:outline-leaf-500"
+              type="button"
+            >
+              Primary School
+              <span class="block text-[10px] font-normal opacity-75 leading-none mt-0.5">
+                Grades 1 – 6
+              </span>
+            </button>
+
+            <button
+              id="tab-junior"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-junior"
+              class="tab-btn font-heading font-bold text-sm px-6 py-3
+                     rounded-xl transition-all duration-200
+                     focus-visible:outline-2 focus-visible:outline-leaf-500"
+              type="button"
+            >
+              Junior School
+              <span class="block text-[10px] font-normal opacity-75 leading-none mt-0.5">
+                Grades 7 – 9
+              </span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════════════════════════
+             TAB PANELS
+        ═══════════════════════════════════════════════════════ -->
+
+        <!-- ── Panel: Pre-Primary ──────────────────────────── -->
+        <div id="panel-preprimary"
+             role="tabpanel"
+             aria-labelledby="tab-preprimary"
+             class="tab-panel active"
+             tabindex="0">
+
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <!-- Image -->
+            <div class="rounded-4xl overflow-hidden shadow-medium aspect-[4/3]">
+              <img
+                src="Assets/Academics/pre-primary.jpg"
+                alt="Pre-Primary learners engaged in guided play and creative activities at EagleNest"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Content -->
+            <div class="flex flex-col gap-6">
+              <div>
+                <span class="inline-block bg-leaf-100 text-leaf-700 text-xs
+                             font-bold uppercase tracking-wide px-3 py-1
+                             rounded-full mb-3">Ages 4 – 5 · PP1 &amp; PP2</span>
+                <h3 class="text-2xl sm:text-3xl font-heading font-bold text-ink
+                           leading-tight mb-3">
+                  Pre-Primary Programme
+                </h3>
+                <p class="text-ink/70 text-sm leading-relaxed">
+                  [REPLACE: Describe the pre-primary approach — e.g. Our Pre-Primary
+                  programme follows the CBC Early Years framework, centred on
+                  play-based, child-led learning. PP1 and PP2 learners develop
+                  foundational literacy in English and Kiswahili, early numeracy,
+                  motor skills, and social-emotional competencies through structured
+                  play, storytelling, songs, and hands-on activities in our purpose-built
+                  Early Childhood Development classrooms.]
+                </p>
+              </div>
+
+              <!-- Key features -->
+              <ul class="grid sm:grid-cols-2 gap-3 list-none m-0 p-0">
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">
+                    [REPLACE: Class ratio — e.g. Max 20 learners per class]
+                  </span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Bilingual instruction — English &amp; Kiswahili</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Dedicated ECD classrooms &amp; outdoor play area</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Portfolio-based observation records</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Music, movement &amp; art every day</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-leaf-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Weekly parent progress update</span>
+                </li>
+              </ul>
+
+              <a href="Admissions.html"
+                 class="self-start inline-flex items-center gap-2 bg-leaf-500
+                        hover:bg-leaf-600 text-white font-heading font-bold
+                        text-sm px-6 py-3 rounded-full shadow-soft
+                        transition-all duration-200">
+                Apply for Pre-Primary
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div><!-- /panel-preprimary -->
+
+
+        <!-- ── Panel: Primary School ───────────────────────── -->
+        <div id="panel-primary"
+             role="tabpanel"
+             aria-labelledby="tab-primary"
+             class="tab-panel"
+             tabindex="0">
+
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div class="rounded-4xl overflow-hidden shadow-medium aspect-[4/3]">
+              <img
+                src="Assets/Academics/primary.jpg"
+                alt="Primary school learners presenting a science project to their class"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="flex flex-col gap-6">
+              <div>
+                <span class="inline-block bg-sky-100 text-sky-700 text-xs
+                             font-bold uppercase tracking-wide px-3 py-1
+                             rounded-full mb-3">Ages 6 – 12 · Grades 1 – 6</span>
+                <h3 class="text-2xl sm:text-3xl font-heading font-bold text-ink
+                           leading-tight mb-3">
+                  Primary School Programme
+                </h3>
+                <p class="text-ink/70 text-sm leading-relaxed">
+                  [REPLACE: Describe the primary curriculum — e.g. The Primary School
+                  programme covers the full CBC framework for Grades 1–6, combining
+                  core academic subjects with integrated thematic learning, project
+                  work, and continuous assessment tasks (CATs). Learners build
+                  deep competency in Literacy, Numeracy, Science, Social Studies,
+                  Creative Arts, and Physical Education, with French introduced from
+                  Grade 4. Every term ends with a Learner Portfolio Review shared
+                  with parents.]
+                </p>
+              </div>
+
+              <ul class="grid sm:grid-cols-2 gap-3 list-none m-0 p-0">
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">
+                    [REPLACE: Class ratio — e.g. Max 30 learners per class]
+                  </span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Continuous Assessment Tasks (CATs) each term</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">1:1 tablets from Grade 4</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">French language from Grade 4</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Termly Learner Portfolio Reviews</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-sky-500 mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Subject specialist teachers from Grade 5</span>
+                </li>
+              </ul>
+
+              <a href="Admissions.html"
+                 class="self-start inline-flex items-center gap-2 bg-sky-500
+                        hover:bg-sky-600 text-white font-heading font-bold
+                        text-sm px-6 py-3 rounded-full shadow-soft
+                        transition-all duration-200">
+                Apply for Primary
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div><!-- /panel-primary -->
+
+
+        <!-- ── Panel: Junior School ────────────────────────── -->
+        <div id="panel-junior"
+             role="tabpanel"
+             aria-labelledby="tab-junior"
+             class="tab-panel"
+             tabindex="0">
+
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div class="rounded-4xl overflow-hidden shadow-medium aspect-[4/3]">
+              <img
+                src="Assets/Academics/junior.jpg"
+                alt="Junior school learners in a laboratory working on a group experiment"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="flex flex-col gap-6">
+              <div>
+                <span class="inline-block bg-ink/10 text-ink text-xs font-bold
+                             uppercase tracking-wide px-3 py-1 rounded-full mb-3">
+                  Ages 12 – 15 · Grades 7 – 9
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-heading font-bold text-ink
+                           leading-tight mb-3">
+                  Junior School Programme
+                </h3>
+                <p class="text-ink/70 text-sm leading-relaxed">
+                  [REPLACE: Describe the junior school curriculum — e.g. Junior School
+                  learners engage the CBC pathway strands in depth, choosing from
+                  Arts &amp; Sports Science, Social Sciences, and STEM tracks in Grade
+                  7 based on their portfolio evidence and career interest inventory.
+                  Lessons are taught by specialist teachers in dedicated subject rooms.
+                  Assessment includes three CATs per subject per term, project work,
+                  and a practical component for Science and Home Science.]
+                </p>
+              </div>
+
+              <ul class="grid sm:grid-cols-2 gap-3 list-none m-0 p-0">
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">STEM, Social Sciences &amp; Arts tracks</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">All subject-specialist teachers</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">3 CATs per subject per term</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">
+                    [REPLACE: e.g. Mentorship programme — assigned form teacher]
+                  </span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Career exploration &amp; interest inventory</span>
+                </li>
+                <li class="flex items-start gap-2.5 bg-white rounded-2xl p-4
+                           shadow-soft text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       class="w-5 h-5 text-ink mt-0.5 shrink-0"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-ink/75">Practical Science &amp; Home Science labs</span>
+                </li>
+              </ul>
+
+              <a href="Admissions.html"
+                 class="self-start inline-flex items-center gap-2 bg-ink
+                        hover:bg-ink/80 text-white font-heading font-bold
+                        text-sm px-6 py-3 rounded-full shadow-soft
+                        transition-all duration-200">
+                Apply for Junior School
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div><!-- /panel-junior -->
+
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  4. SUBJECTS GRID WITH ICONS                       ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="subjects"
+      aria-labelledby="subjects-heading"
+      class="py-20 lg:py-28 bg-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="reveal text-sky-500 font-semibold text-sm
+                    uppercase tracking-widest mb-3">
+            What We Teach
+          </p>
+          <h2 id="subjects-heading"
+              class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading
+                     font-bold text-ink mb-4">
+            Subjects &amp; Learning Areas
+          </h2>
+          <p class="reveal text-ink/65 text-base">
+            Our CBC subject offering covers core academic areas alongside
+            expressive arts, physical development, and digital skills.
+          </p>
+        </div>
+
+        <div class="reveal-group grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+
+          <!-- English -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412
+                         9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77
+                         8.07 15.622 3 18.129"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                English Language &amp; Literature
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Reading, writing, oracy, and literary appreciation.
+                PP1 – Grade 9.
+              </p>
+            </div>
+          </article>
+
+          <!-- Kiswahili -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2
+                         0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Kiswahili
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Kenya's national language taught as both a subject and
+                a medium of instruction.
+              </p>
+            </div>
+          </article>
+
+          <!-- Mathematics -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12
+                         14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2
+                         2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2
+                         2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Mathematics
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Number, algebra, geometry, data, and financial literacy
+                progressively from PP1 – Grade 9.
+              </p>
+            </div>
+          </article>
+
+          <!-- Integrated Science -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6
+                         6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05
+                         15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0
+                         00.586 1.414l5 5c1.26 1.26.367 3.414-1.415
+                         3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2
+                         2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Integrated Science
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Hands-on Biology, Chemistry, and Physics through
+                inquiry experiments and project work.
+              </p>
+            </div>
+          </article>
+
+          <!-- Social Studies -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0
+                         012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2
+                         2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15
+                         20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0
+                         9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Social Studies &amp; CRE
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Kenya's geography, history, citizenship, and religious
+                and moral education.
+              </p>
+            </div>
+          </article>
+
+          <!-- Creative Arts -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2
+                         2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2
+                         2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Creative Arts &amp; Design
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Visual art, craft, design, and music integrated across
+                all year groups.
+              </p>
+            </div>
+          </article>
+
+          <!-- Physical Education -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Physical &amp; Health Education
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Athletics, team sports, gymnastics, swimming, and
+                nutrition awareness.
+              </p>
+            </div>
+          </article>
+
+          <!-- Digital Literacy -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5
+                         17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0
+                         00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Digital Literacy &amp; Coding
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                ICT fundamentals, Scratch programming, and responsible
+                digital citizenship from Grade 1.
+              </p>
+            </div>
+          </article>
+
+          <!-- French -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9
+                         9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0
+                         18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                French Language
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Conversational and written French offered from
+                Grade 4 through Grade 9.
+              </p>
+            </div>
+          </article>
+
+          <!-- Home Science -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001
+                         1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6
+                         0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011
+                         1v4a1 1 0 001 1m-6 0h6"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Home Science
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                Nutrition, food technology, and domestic skills
+                taught practically in Grades 7 – 9.
+              </p>
+            </div>
+          </article>
+
+          <!-- Agriculture -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-sky-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21
+                         12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Agriculture &amp; Nutrition
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                School garden-based learning, crop science, and
+                sustainable food systems. Grades 4 – 9.
+              </p>
+            </div>
+          </article>
+
+          <!-- Life Skills -->
+          <article class="subject-card reveal bg-white rounded-3xl p-6 shadow-soft
+                          hover:shadow-medium border border-sky-50
+                          transition-all duration-300 flex flex-col items-start gap-3">
+            <div class="w-11 h-11 rounded-xl bg-leaf-100 flex items-center
+                        justify-center" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5
+                         4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5
+                         0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-ink text-sm">
+                Life Skills &amp; Well-Being
+              </h3>
+              <p class="text-xs text-ink/55 mt-1 leading-relaxed">
+                [REPLACE: e.g. Mental health, financial literacy, puberty
+                education, and leadership skills for all year groups.]
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  5. CO-CURRICULAR ACADEMIC SUPPORT                 ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="academic-support"
+      aria-labelledby="support-heading"
+      class="py-20 lg:py-28 bg-ink text-white overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          <!-- Image -->
+          <div class="reveal-left order-2 lg:order-1">
+            <div class="relative rounded-4xl overflow-hidden shadow-strong aspect-[4/3]">
+              <img
+                src="Assets/Academics/support.jpg"
+                alt="A teacher providing one-on-one support to a learner during an after-school session"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- Floating badge -->
+            <div class="absolute -mt-20 ml-6 lg:ml-auto lg:-mr-8 bg-leaf-500
+                        text-white rounded-2xl px-5 py-3 shadow-strong
+                        inline-flex items-center gap-2 z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                   aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span class="text-sm font-bold">After-school programmes available</span>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="order-1 lg:order-2">
+            <p class="reveal text-leaf-400 font-semibold text-sm
+                      uppercase tracking-widest mb-3">
+              Beyond the Timetable
+            </p>
+            <h2 id="support-heading"
+                class="reveal text-3xl sm:text-4xl lg:text-5xl font-heading
+                       font-bold text-white leading-tight mb-8">
+              Academic Support &amp;<br/>Co-Curricular Enrichment
+            </h2>
+
+            <div class="reveal-group space-y-5">
+
+              <!-- Remedial Support -->
+              <div class="reveal flex items-start gap-4 bg-white/5 border
+                          border-white/10 rounded-2xl p-5">
+                <div class="w-10 h-10 rounded-xl bg-leaf-500/20 flex items-center
+                            justify-center shrink-0 mt-0.5" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-400"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8
+                             0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-white text-base mb-1">
+                    Learning Support Unit
+                  </h3>
+                  <p class="text-sky-100/65 text-sm leading-relaxed">
+                    [REPLACE: e.g. Dedicated LSU teachers offer pull-out and in-class
+                    support for learners who require additional scaffolding in Literacy
+                    and Numeracy, including an IEP programme for learners with
+                    identified learning differences.]
+                  </p>
+                </div>
+              </div>
+
+              <!-- Gifted & Talented -->
+              <div class="reveal flex items-start gap-4 bg-white/5 border
+                          border-white/10 rounded-2xl p-5">
+                <div class="w-10 h-10 rounded-xl bg-sky-500/20 flex items-center
+                            justify-center shrink-0 mt-0.5" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-400"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21
+                             12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-white text-base mb-1">
+                    Gifted &amp; Talented Programme
+                  </h3>
+                  <p class="text-sky-100/65 text-sm leading-relaxed">
+                    [REPLACE: e.g. High-achieving learners are identified through
+                    CAT performance and teacher nomination and enrolled in extension
+                    projects, national olympiads (Maths, Science, Geography), and
+                    inter-school academic challenges.]
+                  </p>
+                </div>
+              </div>
+
+              <!-- Homework &  Study Clubs -->
+              <div class="reveal flex items-start gap-4 bg-white/5 border
+                          border-white/10 rounded-2xl p-5">
+                <div class="w-10 h-10 rounded-xl bg-leaf-500/20 flex items-center
+                            justify-center shrink-0 mt-0.5" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-leaf-400"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168
+                             5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477
+                             4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0
+                             3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5
+                             18c-1.746 0-3.332.477-4.5 1.253"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-white text-base mb-1">
+                    Homework Club &amp; Study Sessions
+                  </h3>
+                  <p class="text-sky-100/65 text-sm leading-relaxed">
+                    [REPLACE: e.g. Supervised homework club runs Monday to Thursday,
+                    3:30–5:00 PM, staffed by subject teachers and open to all
+                    learners from Grade 3 upward at no extra charge.]
+                  </p>
+                </div>
+              </div>
+
+              <!-- Counselling -->
+              <div class="reveal flex items-start gap-4 bg-white/5 border
+                          border-white/10 rounded-2xl p-5">
+                <div class="w-10 h-10 rounded-xl bg-sky-500/20 flex items-center
+                            justify-center shrink-0 mt-0.5" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-400"
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                       stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5
+                             4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5
+                             0 00-6.364 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-heading font-bold text-white text-base mb-1">
+                    Counselling &amp; Well-Being
+                  </h3>
+                  <p class="text-sky-100/65 text-sm leading-relaxed">
+                    [REPLACE: e.g. Two full-time counsellors support learner
+                    well-being, manage referrals, and run group resilience sessions.
+                    Parent consultations are available by appointment each term.]
+                  </p>
+                </div>
+              </div>
+
+            </div><!-- /support items -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  6. DAILY LEARNING TIMELINE                        ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="daily-schedule"
+      aria-labelledby="schedule-heading"
+      class="py-20 lg:py-28 bg-white"
+    >
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="reveal text-sky-500 font-semibold text-sm
+                    uppercase tracking-widest mb-3">
+            A Day at EagleNest
+          </p>
+          <h2 id="schedule-heading"
+              class="reveal text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+            Daily Learning Timeline
+          </h2>
+          <p class="reveal text-ink/60 text-base">
+            A structured, purposeful school day that balances focused learning,
+            movement, creative expression, and personal development.
+            [REPLACE: Adjust times to match your actual timetable.]
+          </p>
+        </div>
+
+        <!-- Timeline list -->
+        <ol class="relative border-l-2 border-sky-100 ml-4 sm:ml-8 space-y-0
+                   list-none m-0 p-0 pl-0" role="list"
+            aria-label="Daily school schedule">
+
+          <!-- Item helper macro: each item uses left border + dot -->
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-leaf-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-leaf-600 uppercase tracking-widest">
+              [REPLACE: e.g. 7:00 AM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">Gate Opens &amp; Morning Duty</h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. School gates open. Duty teachers supervise arrival.
+              Learners proceed to form rooms for morning devotion and roll call.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-sky-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-sky-600 uppercase tracking-widest">
+              [REPLACE: e.g. 7:30 AM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">Morning Assembly</h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. School-wide assembly: national anthem, devotion,
+              notices, and a brief motivational talk from a learner or teacher.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-leaf-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-leaf-600 uppercase tracking-widest">
+              [REPLACE: e.g. 7:50 AM – 10:30 AM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">
+              Morning Learning Block
+            </h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Three lessons of 40 minutes each. Core subjects
+              (English, Maths, Science) are scheduled during this high-focus
+              morning window.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-sky-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-sky-600 uppercase tracking-widest">
+              [REPLACE: e.g. 10:30 – 11:00 AM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">Short Break &amp; Snack Time</h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Learners enjoy supervised break in designated year-group
+              zones. Healthy tuck shop and packed lunch options available.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-leaf-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-leaf-600 uppercase tracking-widest">
+              [REPLACE: e.g. 11:00 AM – 1:00 PM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">
+              Mid-Morning Learning Block
+            </h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Three lessons covering Kiswahili, Social Studies, CRE,
+              and Creative Arts. Project-based activities and group work.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-sky-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-sky-600 uppercase tracking-widest">
+              [REPLACE: e.g. 1:00 – 2:00 PM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">Lunch Break</h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Hot, nutritionally balanced meals served in the school
+              dining hall. Free play in supervised recreation zones.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-leaf-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-leaf-600 uppercase tracking-widest">
+              [REPLACE: e.g. 2:00 – 3:30 PM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">
+              Afternoon Block — PHE, Digital Literacy &amp; Labs
+            </h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Two practical or elective lessons: Physical Education,
+              Computer Lab, Home Science, Agriculture, or subject library time.
+              Varies by day and year group.]
+            </p>
+          </li>
+
+          <li class="reveal relative day-timeline-item pl-10 pb-8">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-sky-500
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-sky-600 uppercase tracking-widest">
+              [REPLACE: e.g. 3:30 – 5:00 PM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">
+              Co-Curricular Activities &amp; Homework Club
+            </h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. Learners choose from 35+ clubs (debate, robotics,
+              choir, football, drama, scouts, etc.) or attend supervised homework
+              club. Optional prep for Grade 7+ boarders.]
+            </p>
+          </li>
+
+          <li class="reveal relative pl-10">
+            <div class="absolute -left-2.5 top-1 w-5 h-5 rounded-full bg-ink
+                        border-4 border-white shadow-soft" aria-hidden="true"></div>
+            <time class="text-xs font-bold text-ink/50 uppercase tracking-widest">
+              [REPLACE: e.g. 5:00 PM]
+            </time>
+            <h3 class="font-heading font-bold text-ink text-base mt-1">School Day Ends</h3>
+            <p class="text-sm text-ink/60 mt-1 leading-relaxed">
+              [REPLACE: e.g. All learners collected by 5:15 PM. Transport routes
+              available. Boarding learners proceed to supper and evening prep.]
+            </p>
+          </li>
+
+        </ol>
+
+        <p class="reveal mt-8 text-xs text-ink/40 text-center">
+          [REPLACE: Schedule is indicative and may vary by level and day. Full
+          timetables are shared with families at the start of each term.]
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  7. DOWNLOADS                                      ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="downloads"
+      aria-labelledby="downloads-heading"
+      class="py-20 lg:py-24 bg-brand-gradient-soft"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <p class="reveal text-leaf-600 font-semibold text-sm
+                    uppercase tracking-widest mb-3">
+            Resource Centre
+          </p>
+          <h2 id="downloads-heading"
+              class="reveal text-3xl sm:text-4xl font-heading font-bold text-ink mb-4">
+            Academic Documents &amp; Downloads
+          </h2>
+          <p class="reveal text-ink/65 text-base">
+            Download curriculum guides, assessment calendars, and policy
+            documents to help you plan your learner's academic journey.
+          </p>
+        </div>
+
+        <div class="reveal-group grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <!-- Download card helper:
+               - href points to Assets/Docs/filename.pdf
+               - Always include the aria-label describing the download
+          -->
+
+          <!-- Doc 1 -->
+          <a href="Assets/Docs/eaglenest-curriculum-guide-2025.pdf"
+             download
+             aria-label="Download EagleNest CBC Curriculum Guide 2025 PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <!-- PDF icon -->
+            <div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-red-500"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1
+                         1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-leaf-600 transition-colors">
+                CBC Curriculum Guide 2025
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. Full subject overview and learning outcomes for
+                PP1 – Grade 9. Updated January 2025.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-leaf-600 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+          <!-- Doc 2 -->
+          <a href="Assets/Docs/eaglenest-assessment-calendar-2025.pdf"
+             download
+             aria-label="Download EagleNest Assessment Calendar 2025 PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-sky-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-sky-500"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2
+                         0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-sky-600 transition-colors">
+                Assessment Calendar 2025
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. CAT dates, project submission windows, and
+                report release dates for all three terms.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-sky-600 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+          <!-- Doc 3 -->
+          <a href="Assets/Docs/eaglenest-booklist-2025.pdf"
+             download
+             aria-label="Download EagleNest Book List 2025 PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-leaf-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477
+                         3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5
+                         1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477
+                         4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746
+                         0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-leaf-600 transition-colors">
+                Book List 2025
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. Recommended textbooks and stationery for
+                all year groups. Updated for the 2025 academic year.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-leaf-600 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+          <!-- Doc 4 -->
+          <a href="Assets/Docs/eaglenest-homework-policy.pdf"
+             download
+             aria-label="Download EagleNest Homework Policy PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-red-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-red-500"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1
+                         1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2
+                         2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-red-600 transition-colors">
+                Homework Policy
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. Our homework guidelines for parents and learners,
+                including expectations by year group and digital assignment tools.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-red-500 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+          <!-- Doc 5 -->
+          <a href="Assets/Docs/eaglenest-term-dates-2025.pdf"
+             download
+             aria-label="Download EagleNest Term Dates 2025 PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-sky-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-sky-500"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-sky-600 transition-colors">
+                Term Dates &amp; School Calendar 2025
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. Opening and closing dates for all three terms,
+                public holidays, and major school events.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-sky-600 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+          <!-- Doc 6 -->
+          <a href="Assets/Docs/eaglenest-learning-support-policy.pdf"
+             download
+             aria-label="Download EagleNest Learning Support Policy PDF"
+             class="download-card reveal group bg-white rounded-3xl p-6 shadow-soft
+                    hover:shadow-medium transition-all duration-300 flex items-start gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-leaf-50 flex items-center
+                        justify-center shrink-0" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-leaf-600"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2
+                         2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2
+                         2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-heading font-bold text-ink text-sm leading-tight
+                        group-hover:text-leaf-600 transition-colors">
+                Learning Support Policy
+              </p>
+              <p class="text-xs text-ink/50 mt-1 leading-relaxed">
+                [REPLACE: e.g. How we identify, support, and review learners
+                needing additional academic or pastoral intervention.]
+              </p>
+              <span class="inline-flex items-center gap-1 text-xs font-semibold
+                           text-leaf-600 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                     aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                           0l-4-4m4 4V4"/>
+                </svg>
+                Download PDF
+              </span>
+            </div>
+          </a>
+
+        </div><!-- /downloads grid -->
+      </div>
+    </section>
+
+
+    <!-- ╔═══════════════════════════════════════════════════╗
+         ║  8. CTA — ADMISSIONS                              ║
+         ╚═══════════════════════════════════════════════════╝ -->
+    <section
+      id="academics-cta"
+      aria-labelledby="academics-cta-heading"
+      class="py-20 lg:py-28 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-brand-gradient" aria-hidden="true"></div>
+      <div class="absolute -top-16 -right-16 w-80 h-80 rounded-full
+                  bg-white/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-20 -left-20 w-96 h-96 rounded-full
+                  bg-white/10 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8
+                  text-center">
+
+        <p class="reveal inline-flex items-center gap-2 bg-white/20
+                  border border-white/30 text-white text-xs font-semibold
+                  uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+               aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2
+                     0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Applications Open · Term 1, 2025
+        </p>
+
+        <h2 id="academics-cta-heading"
+            class="reveal text-3xl sm:text-5xl font-heading font-bold
+                   text-white leading-tight mb-6">
+          Ready to Start the<br/>Academic Journey?
+        </h2>
+        <p class="reveal text-white/85 text-lg leading-relaxed
+                  max-w-2xl mx-auto mb-10">
+          Have questions about our curriculum or which level is right for your
+          child? Our admissions team is happy to guide you — book a consultation
+          or download our prospectus to get started.
+        </p>
+
+        <div class="reveal flex flex-wrap justify-center gap-4">
+          <a href="Admissions.html"
+             class="inline-flex items-center gap-2 bg-white text-ink
+                    font-heading font-bold text-base px-8 py-4 rounded-full
+                    shadow-strong hover:-translate-y-0.5
+                    transition-all duration-200">
+            Start Your Application
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="Assets/Docs/eaglenest-prospectus-2025.pdf"
+             download
+             class="inline-flex items-center gap-2 border-2 border-white/70
+                    text-white hover:bg-white/15 font-heading font-bold
+                    text-base px-8 py-4 rounded-full transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0
+                       0l-4-4m4 4V4"/>
+            </svg>
+            Download Prospectus
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER — injected by components.js
+  ════════════════════════════════════════════════════════════ -->
+  <div id="site-footer"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════════════════════════ -->
+  <script src="Assets/js/components.js"></script>
+  <script src="Assets/js/main.js"></script>
+
+  <!-- ── Accessible Tab Panel Controller ─────────────────── -->
+  <script>
+    (function () {
+      "use strict";
+
+      /* Collect all tab buttons in the tablist */
+      const tablist = document.querySelector('[role="tablist"]');
+      if (!tablist) return;
+
+      const tabs   = Array.from(tablist.querySelectorAll('[role="tab"]'));
+      const panels = tabs.map(t =>
+        document.getElementById(t.getAttribute("aria-controls"))
+      );
+
+      /**
+       * Activate a single tab and show its panel.
+       * @param {number} index - index in the tabs array
+       */
+      function activateTab(index) {
+        tabs.forEach((tab, i) => {
+          const isActive = i === index;
+          tab.setAttribute("aria-selected", String(isActive));
+          panels[i].classList.toggle("active", isActive);
+        });
+        /* Move focus to the newly activated panel for keyboard users */
+        panels[index].focus({ preventScroll: true });
+      }
+
+      /* Click handler */
+      tabs.forEach((tab, i) => {
+        tab.addEventListener("click", () => activateTab(i));
+      });
+
+      /* Keyboard navigation — arrow keys, Home, End */
+      tablist.addEventListener("keydown", (e) => {
+        const current = tabs.findIndex(
+          t => t.getAttribute("aria-selected") === "true"
+        );
+        let next = current;
+
+        switch (e.key) {
+          case "ArrowRight":
+          case "ArrowDown":
+            next = (current + 1) % tabs.length;
+            break;
+          case "ArrowLeft":
+          case "ArrowUp":
+            next = (current - 1 + tabs.length) % tabs.length;
+            break;
+          case "Home":
+            next = 0;
+            break;
+          case "End":
+            next = tabs.length - 1;
+            break;
+          default:
+            return; // don't prevent default for other keys
+        }
+
+        e.preventDefault();
+        activateTab(next);
+        tabs[next].focus();
+      });
+
+      /* Re-run scroll reveal for newly shown panels */
+      tablist.addEventListener("click", () => {
+        if (typeof initScrollReveal === "function") {
+          initScrollReveal();
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
